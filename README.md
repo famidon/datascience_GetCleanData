@@ -1,0 +1,6 @@
+# datascience_getData
+
+This repository contains an R script (run_analysis.R) which creates a merged data set from the Samsung data and exports a new data set (new_tidy_dataSet.txt) that calculates the mean of the explanatory variables by test subject and activity (e.g., walking sitting, etc.). In addition to the R script, this repository contains the "tidy" data set created by the script and a code book which explains the different variables in the data set.
+
+The original Samsung data consisted of testing and training data divided into subject (e.g., subject_train.txt), response variable (y_train.txt), and explanatory variable (e.g., x_train.txt) data sets. The R script combines each of these testing and training sets and then combines the subject, response variable, and explanatory variable datasets into one data set. In addition, it renames the columns of the explanatory variables using the column name labels in the features.txt file and labels each of the response variables using a descriptive character string (e.g., response variable 1 = walking). The main data set is then reduced to only those explanatory variables that contain a mean or standard deviation. The script then calculates the mean of each explanatory variable by subject and activity and exports this "tidy" data set as a text file called new_tidy_dataSet.txt.
+
